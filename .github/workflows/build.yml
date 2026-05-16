@@ -1,20 +1,21 @@
 name: Build APK
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          java-version: '17'
-          distribution: 'temurin'
-      - name: Build APK
-        run: |
-          cd GhopGhopAnime
-          chmod +x gradlew
-          ./gradlew assembleDebug
-      - uses: actions/upload-artifact@v4
-        with:
-          name: app-debug
-          path: GhopGhopAnime/app/build/outputs/apk/debug/app-debug.apk
+  on: [push]
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - uses: actions/setup-java@v4
+          with:
+            java-version: '17'
+            distribution: 'temurin'
+        - name: Build APK
+          run: |
+            cd GhopGhopAnime
+            chmod +x gradlew
+            ./gradlew assembleDebug
+        - uses: actions/upload-artifact@v4
+          with:
+            name: app-debug
+            path: GhopGhopAnime/app/build/outputs/apk/debug/app-debug.apk
+  
