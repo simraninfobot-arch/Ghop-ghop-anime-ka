@@ -1,0 +1,18 @@
+=== GHOP GHOP ANIME — Android Studio Project ===
+
+1. Android Studio install karo: https://developer.android.com/studio
+2. Ye folder open karo: File → Open → is folder ko select karo
+3. Gradle sync hone do
+4. Build → Generate Signed APK → Create keystore → Finish
+5. APK: app/release/app-release.apk
+
+FEATURES:
+✓ Website icon = App icon (auto fetched)  
+✓ Text copy/select completely disabled
+✓ Screenshot/screen record blocked
+✓ Anti-debugger & anti-emulator protection
+✓ URL obfuscated (not visible in code)
+✓ Full screen WebView
+✓ Splash screen
+✓ Domain whitelist (only xo.je allowed)
+✓ ProGuard code obfuscation (release build)
