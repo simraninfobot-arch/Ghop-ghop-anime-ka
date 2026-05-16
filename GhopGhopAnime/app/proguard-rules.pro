@@ -1,0 +1,7 @@
+-keep class com.ghopghop.anime.** { *; }
+-keepattributes *Annotation*
+-optimizationpasses 5
+-repackageclasses ''
+-allowaccessmodification
+-renamesourcefileattribute x
+-keepattributes SourceFile,LineNumberTable
